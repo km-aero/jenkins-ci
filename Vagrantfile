@@ -9,7 +9,7 @@ def set_env vars
       echo "Setting Environment Variables"
       source ~/.bashrc
   HEREDOC
-                  
+                   
   vars.each do |key, value|
     command += <<~HEREDOC
       if [ -z "$#{key}" ]; then
